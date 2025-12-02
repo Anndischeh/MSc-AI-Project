@@ -146,5 +146,3 @@ pip install -r requirements.txt
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This README provides a solid foundation to understand and run your models, evaluate their performance, and visualize the results effectively.
-
