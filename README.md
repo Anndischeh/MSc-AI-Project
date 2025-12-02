@@ -9,10 +9,10 @@ This project focuses on developing unsupervised learning methods for detecting a
 
 ## Contents
 - `Master_Project_Proposal_Unsupervised_Anomaly_Detection_Medical_Imaging.pdf`: The project proposal.
-- Future directories/files: will include code, experiments, and results.
+- [Dataset link](https://www.kaggle.com/datasets/dschettler8845/brats-2021-task1)
 
 ## Links
-- [Project Proposal PDF](Master_Project_Proposal_Unsupervised_Anomaly_Detection_Medical_Imaging.pdf)
+- [Project Proposal PDF](https://github.com/Anndischeh/MSc-AI-Project/blob/Proposal/Master_Project_Proposal_Unsupervised_Anomaly_Detection_Medical_Imaging.pdf)
 ---------------------------------------------------------------------------------------------------------
 # Brain Tumor Anomaly Detection
 
@@ -145,4 +145,5 @@ pip install -r requirements.txt
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
