@@ -1,11 +1,58 @@
-# Master Project: Unsupervised Anomaly Detection for Medical Imaging
+# Master Project: ## Unsupervised Anomaly Detection for Medical Imaging
 
 **University:** City, University of London  
 **Program:** MSc in Artificial Intelligence  
 **Project Type:** Individual Master Project  
 
-## Project Overview
-This project focuses on developing unsupervised learning methods for detecting anomalies in medical imaging data. The aim is to leverage machine learning techniques to identify unusual patterns in medical scans without requiring labeled datasets.
+## Executive Summary
+This project investigates reconstruction-based unsupervised anomaly detection for brain MRI,
+addressing the challenge of limited labeled data in clinical environments.
+
+Five architectures (AE, VAE, GAN, GANomaly, and a proposed ViT-based Autoencoder with Context Dropout)
+were implemented and benchmarked on [the BraTS 2021 dataset](https://www.kaggle.com/datasets/dschettler8845/brats-2021-task1).
+
+The proposed ViT-based model achieved the strongest performance (ROC-AUC: 0.862, AP: 0.838),
+demonstrating the effectiveness of global context modelling for tumour detection and localisation.
+
+## Problem Definition
+- Manual annotation of medical imaging data is expensive and time-consuming
+- Supervised models struggle to generalise with limited labeled data
+- The goal is to detect and localise anomalies using only healthy samples during training
+
+## Design Choices
+- Reconstruction-based anomaly detection was selected to avoid dependency on labeled anomalies
+- Multiple architectures were benchmarked to avoid a one-size-fits-all approach
+- Vision Transformers were explored to capture long-range spatial dependencies
+- Context Dropout was introduced to improve robustness to local noise
+
+## Key Results
+- ViT_AE_CD achieved the highest performance:
+  - ROC-AUC: 0.862
+  - Average Precision: 0.838
+- Transformer-based models outperformed CNN and GAN-based baselines
+- Anomaly heatmaps showed improved localisation of tumour regions
+
+## Engineering & Reproducibility
+- Modular model implementations
+- Configuration-driven experiments
+- Deterministic evaluation pipelines
+- Version-controlled experiments (Git)
+
+**Tech Stack:** Python, PyTorch, Torchvision, NumPy, scikit-learn, OpenCV, NiBabel
+
+
+## Notes on Production Deployment
+While this project is research-focused, the pipeline could be extended to production by:
+- Adding data validation and drift monitoring
+- Introducing model performance tracking post-deployment
+- Optimising inference latency for clinical workflows
+
+# Brain Tumor Anomaly Detection
+
+## Overview
+
+This repository contains a collection of deep learning models and utilities for detecting anomalies in brain tumor images using various architectures such as Autoencoders, Variational Autoencoders (VAE), Generative Adversarial Networks (GAN), GANomaly, and Vision Transformers (ViT). The models are evaluated on the BraTS 2021 dataset, which consists of brain MRI scans annotated for tumor regions.
+
 
 ## Contents
 - `Master_Project_Proposal_Unsupervised_Anomaly_Detection_Medical_Imaging.pdf`: The project proposal.
@@ -14,11 +61,6 @@ This project focuses on developing unsupervised learning methods for detecting a
 ## Links
 - [Project Proposal PDF](https://github.com/Anndischeh/MSc-AI-Project/blob/Proposal/Master_Project_Proposal_Unsupervised_Anomaly_Detection_Medical_Imaging.pdf)
 ---------------------------------------------------------------------------------------------------------
-# Brain Tumor Anomaly Detection
-
-## Overview
-
-This repository contains a collection of deep learning models and utilities for detecting anomalies in brain tumor images using various architectures such as Autoencoders, Variational Autoencoders (VAE), Generative Adversarial Networks (GAN), GANomaly, and Vision Transformers (ViT). The models are evaluated on the BraTS 2021 dataset, which consists of brain MRI scans annotated for tumor regions.
 
 ### Supported Models
 
@@ -145,5 +187,6 @@ pip install -r requirements.txt
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
 
