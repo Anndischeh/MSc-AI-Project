@@ -1,4 +1,5 @@
-# Master Project: ## Unsupervised Anomaly Detection for Medical Imaging
+# Master Project
+## Unsupervised Anomaly Detection for Medical Imaging
 
 **University:** City, University of London  
 **Program:** MSc in Artificial Intelligence  
@@ -187,6 +188,7 @@ pip install -r requirements.txt
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
 
 
