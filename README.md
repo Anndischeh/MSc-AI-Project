@@ -1,5 +1,13 @@
 # Master Project
 ## Unsupervised Anomaly Detection for Medical Imaging
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![PyTorch](https://img.shields.io/badge/pytorch-2.0%2B-orange)
+![Domain](https://img.shields.io/badge/domain-medical%20imaging-red)
+![Learning](https://img.shields.io/badge/learning-unsupervised%20anomaly%20detection-purple)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Research](https://img.shields.io/badge/type-research-blueviolet)
+![Dataset](https://img.shields.io/badge/dataset-BraTS%202021-yellow)
+
 
 **University:** City, University of London  
 **Program:** MSc in Artificial Intelligence  
@@ -188,6 +196,7 @@ pip install -r requirements.txt
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
 
 
